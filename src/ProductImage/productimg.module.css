@@ -1,0 +1,48 @@
+.productImg{
+    width: 100%;
+    position: relative;
+  }
+  
+  .productImg > img{
+    width: 100%;
+  }
+  
+  .time{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+  }
+  
+  .heart{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1,1);
+    }
+    50%{
+      transform: scale(1.2,1.2);
+    }
+    100%{
+      transform: scale(1,1);
+    }
+    
+  }
+  .heart > i {
+    color: red;
+    animation: heartbeat 1s infinite;
+  
+  }
+  
+  .heart > p{
+    margin-top: 16px;
+  }
